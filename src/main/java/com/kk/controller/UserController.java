@@ -43,7 +43,6 @@ public class UserController {
             }
         } else {
             //  1.2 注册
-
             users.setNickname(users.getUsername());
             users.setFaceImage("");
             users.setFaceImageBig("");
@@ -54,7 +53,6 @@ public class UserController {
 
         UsersVO usersVO = new UsersVO();
         BeanUtils.copyProperties(userResult, usersVO);
-
 
         // 将 usersVO 返回给前端
         return IMoocJSONResult.ok(usersVO);
