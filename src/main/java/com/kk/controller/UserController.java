@@ -18,9 +18,15 @@ public class UserController {
     private UserService userService;
 
 
+    @GetMapping("/hello")
+    public String test() {
+        return "It's ok!";
+    }
+
     @PostMapping("/registerOrLogin")
     public IMoocJSONResult registerOrLogin(@RequestBody Users users) throws Exception {
 
+        System.out.println("get a message !!!!!!!");
         // 0. 判断用户名和密码不为空，任意一个为空则直接返回
         if (StringUtils.isBlank(users.getUsername())||
                 StringUtils.isBlank(users.getPassword())){

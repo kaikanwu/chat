@@ -1,8 +1,5 @@
 package com.kk.pojo.vo;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-
 /**
  * VO 对象代表后端返回给前端的对象
  * 所以我们需要注释掉一些不需要返回的属性
