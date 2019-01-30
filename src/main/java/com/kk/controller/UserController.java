@@ -23,6 +23,7 @@ public class UserController {
         return "It's ok!";
     }
 
+
     @PostMapping("/registerOrLogin")
     public IMoocJSONResult registerOrLogin(@RequestBody Users users) throws Exception {
 
