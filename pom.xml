@@ -26,6 +26,7 @@
     </properties>
 
     <dependencies>
+        <!--spring 相关-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
